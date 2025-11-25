@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(do sed -i 's/\"\"lucide-react@[^\"\"]*\"\"/\"\"lucide-react\"\"/g; s/\"\"clsx@[^\"\"]*\"\"/\"\"clsx\"\"/g; s/\"\"tailwind-merge@[^\"\"]*\"\"/\"\"tailwind-merge\"\"/g; s/\"\"class-variance-authority@[^\"\"]*\"\"/\"\"class-variance-authority\"\"/g' \"$file\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
