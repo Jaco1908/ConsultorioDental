@@ -10,7 +10,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from './ui/alert-dialog';
+} from '@/components/ui/alert-dialog';
 import { LogOut } from 'lucide-react';
 
 interface LogoutConfirmDialogProps {

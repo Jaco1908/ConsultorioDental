@@ -13,10 +13,10 @@ import {
   AlertCircle,
   CheckCircle,
 } from 'lucide-react';
-import { Button } from './ui/button';
-import { Avatar, AvatarFallback } from './ui/avatar';
-import { Badge } from './ui/badge';
-import { Card } from './ui/card';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 
 interface PatientDashboardProps {
   patientName?: string;

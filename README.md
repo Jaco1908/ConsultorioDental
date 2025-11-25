@@ -139,56 +139,53 @@ Para probar el sistema sin backend, usa los **botones de acceso demo** en la pá
 
 ## 📁 Estructura del Proyecto
 
+> **Ver estructura detallada en:** [ESTRUCTURA_PROYECTO.md](./ESTRUCTURA_PROYECTO.md)
+
 ```
 FrontEnd-clinicadental/
+├── docs/                             # Documentación adicional
 ├── src/
 │   ├── app/                          # Next.js App Router
-│   │   ├── layout.tsx                # Layout principal con providers
+│   │   ├── layout.tsx                # Layout principal
 │   │   ├── page.tsx                  # Página de login
-│   │   ├── globals.css               # Estilos globales Tailwind
-│   │   └── dashboard/
+│   │   ├── globals.css               # Estilos globales ⭐
+│   │   └── dashboard/                # Rutas de dashboards
 │   │       ├── doctor/               # Dashboard del doctor
-│   │       │   ├── page.tsx          # Vista principal
-│   │       │   ├── medical-records/  # ⭐ Historias clínicas
-│   │       │   ├── patients/         # Gestión de pacientes
-│   │       │   ├── appointments/     # Calendario de citas
-│   │       │   ├── billing/          # Facturación
-│   │       │   ├── reports/          # Reportes y métricas
-│   │       │   ├── blog/             # Gestión de blog
-│   │       │   └── promotions/       # Promociones
 │   │       ├── patient/              # Dashboard del paciente
 │   │       └── superadmin/           # Dashboard del superadmin
-│   ├── components/
-│   │   ├── ui/                       # Componentes shadcn/ui (52 archivos)
-│   │   ├── Login.tsx                 # Componente de login
-│   │   ├── DoctorDashboard.tsx       # Dashboard médico
-│   │   ├── PatientDashboard.tsx      # Dashboard paciente
-│   │   ├── SuperadminDashboard.tsx   # Dashboard admin
-│   │   ├── MedicalRecordForm.tsx     # Formulario historia clínica
-│   │   ├── Odontogram.tsx            # Odontograma interactivo
-│   │   ├── Tooth.tsx                 # Componente diente individual
-│   │   ├── DentalSymbol.tsx          # Símbolos dentales
-│   │   ├── PatientsList.tsx          # Lista de pacientes
-│   │   ├── AppointmentCalendar.tsx   # Calendario
-│   │   ├── BillingModule.tsx         # Facturación
-│   │   └── ReportsModule.tsx         # Reportes
-│   ├── contexts/
-│   │   └── AuthContext.tsx           # Context de autenticación
-│   ├── types/
-│   │   └── index.ts                  # Definiciones TypeScript
-│   ├── lib/
-│   │   └── utils.ts                  # Utilidades (cn, etc.)
-│   └── services/                     # Servicios para API (futuro)
-├── public/                           # Archivos estáticos
-├── next.config.ts                    # Configuración Next.js
-├── tailwind.config.ts                # Configuración Tailwind
-├── postcss.config.mjs                # Configuración PostCSS
-├── tsconfig.json                     # Configuración TypeScript
-├── .eslintrc.json                    # Configuración ESLint
-├── .gitignore                        # Archivos ignorados por Git
-├── package.json                      # Dependencias del proyecto
-├── README.md                         # Este archivo
-└── DEMO.md                           # Guía para presentaciones
+│   │
+│   ├── components/                   # Componentes organizados ⭐
+│   │   ├── common/                   # Componentes compartidos
+│   │   │   ├── Login.tsx
+│   │   │   └── LogoutConfirmDialog.tsx
+│   │   ├── dashboards/               # Dashboards por rol
+│   │   │   ├── DoctorDashboard.tsx
+│   │   │   ├── PatientDashboard.tsx
+│   │   │   └── SuperadminDashboard.tsx
+│   │   ├── medical/                  # Componentes médicos
+│   │   │   ├── MedicalRecordForm.tsx
+│   │   │   ├── Odontogram.tsx
+│   │   │   ├── Tooth.tsx
+│   │   │   └── DentalSymbol.tsx
+│   │   ├── modules/                  # Módulos funcionales
+│   │   │   ├── AppointmentCalendar.tsx
+│   │   │   ├── BillingModule.tsx
+│   │   │   ├── PatientsList.tsx
+│   │   │   └── ReportsModule.tsx
+│   │   └── ui/                       # shadcn/ui (52 componentes)
+│   │
+│   ├── contexts/                     # Contextos React
+│   │   └── AuthContext.tsx
+│   ├── types/                        # TypeScript
+│   │   └── index.ts
+│   └── lib/                          # Utilidades
+│       └── utils.ts
+│
+├── LEEME_PRIMERO.md                  # 👈 Empieza aquí
+├── DOCUMENTACION_TECNICA.md          # Documentación completa
+├── GUIA_DESARROLLO.md                # Ejemplos prácticos
+├── ESTRUCTURA_PROYECTO.md            # Estructura detallada
+└── package.json                      # Dependencias
 ```
 
 ## 📋 Roadmap (Pendiente de Implementación)

@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
-import { PatientDashboard } from '@/components/PatientDashboard';
+import { PatientDashboard } from '@/components/dashboards/PatientDashboard';
 
 export default function PatientDashboardPage() {
   const router = useRouter();

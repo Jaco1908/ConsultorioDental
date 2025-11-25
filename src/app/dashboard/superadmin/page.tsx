@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
-import { SuperadminDashboard } from '@/components/SuperadminDashboard';
+import { SuperadminDashboard } from '@/components/dashboards/SuperadminDashboard';
 
 export default function SuperadminDashboardPage() {
   const router = useRouter();

@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Tooth, ToothState } from './Tooth';
-import { Button } from './ui/button';
-import { Label } from './ui/label';
-import { Input } from './ui/input';
-import { Checkbox } from './ui/checkbox';
+import { Tooth, ToothState } from '@/components/medical/Tooth';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
+import { Checkbox } from '@/components/ui/checkbox';
 import { X, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 
 interface OdontogramProps {

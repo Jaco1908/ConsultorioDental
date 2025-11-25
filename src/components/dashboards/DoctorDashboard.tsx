@@ -15,9 +15,9 @@ import {
   Settings,
   LogOut,
 } from 'lucide-react';
-import { Button } from './ui/button';
-import { Avatar, AvatarFallback } from './ui/avatar';
-import { Badge } from './ui/badge';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
 
 interface DoctorDashboardProps {
   doctorName?: string;

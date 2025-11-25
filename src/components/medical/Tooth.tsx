@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { DentalSymbol } from './DentalSymbol';
+import { DentalSymbol } from '@/components/medical/DentalSymbol';
 
 export interface ToothState {
   number: string;
